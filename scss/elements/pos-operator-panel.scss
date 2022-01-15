@@ -1,0 +1,39 @@
+$orange-050: #ffe8d9;
+$orange-100: #ffd0b5;
+$orange-200: #ffb088;
+$orange-300: #ff9466;
+$orange-400: #f9703e;
+$orange-500: #f35627;
+$orange-600: #de3a11;
+$orange-700: #c52707;
+$orange-800: #ad1d07;
+$orange-900: #841003;
+
+$grey-050: #f5f7fa;
+$grey-100: #e4e7eb;
+$grey-200: #cbd2d9;
+$grey-300: #9aa5b1;
+$grey-400: #7b8794;
+$grey-500: #616e7c;
+$grey-600: #52606d;
+$grey-700: #3c4c59;
+$grey-800: #323f4b;
+$grey-900: #1f2933;
+
+.calculator {
+  //   box-shadow: 0 0 250x 0 rgba(16, 208, 45, 0);
+  //   color: $grey-050;
+  //   width: 0.75rem;
+  //   padding: 16.25rem;
+  //   text-align: right;
+  //   font-size: calc(1rem * 1.2 * 1.2 * 1.2);
+
+  .calculator-keys {
+    background-color: $grey-900;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+  .calculator-keys button {
+    padding: 17px;
+  }
+}

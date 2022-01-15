@@ -1,0 +1,9 @@
+div {
+  background-color: ecf0f1;
+  padding: 1em;
+}
+
+div:hover {
+  border-radius: 7px;
+  border: 1px solid #f1c40f;
+}

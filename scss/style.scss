@@ -1,0 +1,89 @@
+// @import "~antd/dist/antd.css";
+
+// @import 'vendor/bourbon/bourbon';
+// @import 'utils/mixin';
+
+// @import 'vendor/media_query';
+
+// @import "utils/variable";
+@import "utils/_pos_variables.scss";
+
+/*1. RESET AND TYPHOGRAPHY */
+
+//1.1 reset
+// @import "base/antdesign_reset";
+// @import "base/reset";
+// //1.2 typhography
+// @import "base/typhography";
+
+/*2. ELEMENTS */
+//2.1 grid
+// @import 'elements/grid'; //yes
+// 2.2 list
+// @import 'elements/list'; //yes
+// 2.3 button
+// @import 'elements/button'; //yes
+// 2.4 form
+// @import 'elements/form'; //yes
+//2.5 post
+// @import 'elements/post'; //yes
+// 2.6 pagination
+// @import 'elements/pagination'; //yes
+// 2.7 breadcrumb
+// @import 'elements/breadcrumb'; //yes
+// 2.8 block
+// @import 'elements/block'; //yes
+
+// @import 'elements/panel'; //yes
+// 2.9 widget
+// @import 'elements/widget'; //yes
+// 2.10 slider
+// @import 'elements/slider'; //yes
+// 2.11 masonry
+// 2.12 product
+// @import 'elements/product'; //yes
+// 2.13 banner
+// @import 'elements/banner'; //yes
+// 2.14 filter
+// @import 'elements/filter'; //yes
+// 2.15 table
+// @import 'elements/table'; //yes
+// 2.16 loader
+// @import "elements/loader";
+// 2.17 modal
+// @import 'elements/modal'; //yes
+// 2.17 accordion
+
+// @import 'elements/accordion'; //yes
+// @import 'elements/skeleton'; //yes
+
+// 2.18 modal
+// @import 'elements/tabs'; //yes
+
+/*3. COMPONENTS */
+// 3.1 Cart
+// @import 'components/cart'; //yes
+// 3.2 forms
+// @import 'components/forms'; //yes
+// 3.3 search
+// @import 'components/search'; //yes
+// 3.4 section
+// @import 'components/section'; //yes
+// 3.5 pages
+// @import 'components/pages'; //yes
+
+// @import 'components/menu'; //yes
+
+/*4. MODULES */
+// 4.1 header
+// @import 'modules/navigations'; //yes
+// @import 'modules/header'; //yes
+// 4.2 footer
+// @import 'modules/footer'; //yes
+
+// @import 'themes/effect'; //yes
+
+/*5. HELPERS */
+// @import 'elements/helpers'; //yes
+
+// @import "react/custom"; //yes

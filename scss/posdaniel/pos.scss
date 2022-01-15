@@ -1,0 +1,69 @@
+.pos-background {
+  background: rgba(215, 215, 215, 0.98) !important;
+}
+
+.ul-unstyle {
+  list-style: none;
+}
+ul.ul-containersale-list {
+  width: 100%;
+  list-style: none;
+  padding: 3px 1px;
+  //   background: rgb(0, 145, 255);
+  margin-right: 5px;
+  max-height: 420px;
+  overflow-y: scroll;
+}
+
+// PRODUCT POS
+
+.cart-product {
+  min-height: 80px;
+  width: 180px;
+  margin: 2px 2px;
+  border-radius: 7px 7px;
+}
+
+.container-card-antd {
+  /* // margin: '24px 16px', */
+  padding: 10px !important;
+  min-height: 360;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* background-color: red; */
+}
+
+.cart-product:hover,
+.cart-product:focus,
+.cart-product:active {
+  border: 1px solid #0070f3;
+}
+.list-sale:hover,
+.list-sale:focus,
+.list-sale:active {
+  /* color: #0070f3; */
+  border-radius: 7px 7px;
+  border: 1px solid #0070f3;
+  padding-left: 4px;
+}
+
+.card-style {
+  flex: 1;
+  /* height: 145px; */
+  /* min-height: 145px; */
+  /* width: 100%; */
+  /* background-color: blue; */
+  padding: 0;
+  margin: 0;
+}
+// @media (min-height: 768px) {
+//   ul.ul-containersale-list {
+//     height: 100%;
+//     background-color: black;
+//   }
+// }
+
+// test pos
