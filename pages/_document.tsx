@@ -4,7 +4,9 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import React from 'react'
 
 export default class MyDocument extends Document {
-
+    static async getInitialProps(ctx: any) {
+        return await Document.getInitialProps(ctx)
+    }
     // https://www.simicart.com/manifest-generator.html/
 
     render() {
@@ -19,18 +21,17 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    {/* <meta name='application-name' content='PWA App' />
+                    {/* */}
+                    <meta name='application-name' content='PosDaniel' />
                     <meta name='apple-mobile-web-app-capable' content='yes' />
                     <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-                    <meta name='apple-mobile-web-app-title' content='PWA App' />
-                    <meta name='description' content='Best PWA App in the world' />
+                    <meta name='apple-mobile-web-app-title' content='PosDaniel' />
+                    <meta name='description' content='Best POS App in the world' />
                     <meta name='format-detection' content='telephone=no' />
                     <meta name='mobile-web-app-capable' content='yes' />
                     <meta name='msapplication-config' content='/icons/browserconfig.xml' />
                     <meta name='msapplication-TileColor' content='#2B5797' />
                     <meta name='msapplication-tap-highlight' content='no' />
-                 
-                    */}
                     <meta name='theme-color' content='#fff' />
 
                     <link rel='manifest' href='/manifest.json' />
@@ -72,6 +73,20 @@ export default class MyDocument extends Document {
                 <link rel='apple-touch-startup-image' href='/images/apple_splash_750.png' sizes='750x1334' />
                 <link rel='apple-touch-startup-image' href='/images/apple_splash_640.png' sizes='640x1136' />
                 --> */}
+
+                    <style>{
+                        `
+                            html, body, #__next {
+                            height: 100%;
+                            }
+                            #__next {
+                            margin: 0 auto;
+                            }
+                            h1 {
+                            text-align: center;
+                            }
+                        `
+                    }</style>
                 </Head>
                 <body>
                     <Main />

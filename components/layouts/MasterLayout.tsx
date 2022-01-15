@@ -18,6 +18,12 @@ import { setUserLangRequest } from '../../store/setting/action';
 // import MainHead from '~/components/layouts/modules/MainHead';
 // import { getCategories } from '~/store/categories/action';
 
+interface subLang { code: string, id: string, flagImg: string, name: string };
+interface lang {
+    hasError: boolean,
+    message: string,
+    lang: subLang | any
+}
 const MasterLayout = ({ children }: any) => {
     const dispatch = useDispatch();
     const router = useRouter();
@@ -31,6 +37,7 @@ const MasterLayout = ({ children }: any) => {
     })
 
 
+    // console.log('setUserLang::::', setUserLang);
     // console.log('setUserLang::::', setUserLang.lang.code);
     // console.log('ROUTERRRRRRRRRRRR::::', router.locale);
     useEffect(() => {
@@ -49,16 +56,18 @@ const MasterLayout = ({ children }: any) => {
     }, [])
     useEffect(() => {
 
-        async function localeManageInit() {
-            if (router.locale && setUserLang.lang.code !== router.locale) {
+
+        const localesManageInit = async () => {
+            const nLang: lang = setUserLang;
+            if (router.locale && nLang.lang.code !== router.locale) {
                 const gHelpers = new DataFormater();
                 const respLocal = await gHelpers.langProccessAsync(langers, [router.locale]);
                 dispatch(setUserLangRequest({ lang: respLocal }));
             }
         }
 
-        localeManageInit();
         return () => {
+            localesManageInit();
 
         }
 
